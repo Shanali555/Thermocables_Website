@@ -1,0 +1,114 @@
+.container-9 {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    background: #F4F4F4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #container-9-top {
+        width: 95%;
+        color: #000;
+        border-bottom: 1px solid #585656;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 34px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+
+    #container-9-bottom {
+        width: 95%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+
+        .c9b-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                margin-right: 15px;
+                border-radius: 10px;
+                width: 250px;
+                height: 200px;
+            }
+
+            h1 {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: #000;
+            }
+
+            p {
+                font-size: 12px;
+                color: #585656;
+            }
+        }
+    }
+}
+
+// Media Query
+@media only screen and (max-width: 1260px) {
+    .container-9 {
+        #container-9-bottom {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-9 {
+        #container-9-bottom {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container-9 {
+        #container-9-top {
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        #container-9-bottom {
+            .c9b-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                }
+
+                div {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

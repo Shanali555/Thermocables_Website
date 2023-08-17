@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    box-sizing: border-box;
+    font-family: Open Sans;
+
+    @import "container1";
+    @import "container2";
+    @import "container3";
+    @import "container4";
+    @import "container5";
+    @import "container6";
+    @import "container7";
+    @import "container8";
+    @import "container9";
+    @import "container10";
+    @import "container11";
+    @import "container12";
+}

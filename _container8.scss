@@ -1,0 +1,93 @@
+.container-8{
+    box-shadow: inset 0px 20px 40px #911619, inset 0px -20px 40px #911619;
+    width: 100%;
+    height: 60vh;
+    background-image: url(./Images/stuback.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    #container-8-top{
+        width: 30%;
+        text-align: center;
+        color: #fff;
+        h1{
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    #container-8-bottom{
+        width: 50%;
+        text-align: center;
+        color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 12px;
+        }
+        a{
+            text-decoration: none;
+            background-color: #000;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 10px;
+            padding: 7px;
+            margin: 15px;
+            width: 130px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 25px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+// Media Query
+@media only screen and (max-width: 768px){
+    .container-8{
+        #container-8-top{
+            width: 80%;
+            h1{
+                font-size: 18px;
+            }
+            p{
+                font-size: 11px;
+            }
+        }
+        #container-8-bottom{
+            width: 95%;
+            h1{
+                font-size: 35px;
+            }
+            p{
+                font-size: 11px;
+            }
+            a{
+                font-size: 11px;
+            }
+        }
+    }
+}
